@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Link, scroller } from "react-scroll";
-import { FaWhatsapp, FaBars, FaTimes } from "react-icons/fa";
+import { FaWhatsapp, FaTimes } from "react-icons/fa";
 import logo from "../assets/navbar.png";
+import { HiMenuAlt1 } from "react-icons/hi";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleNavbar = () => setIsOpen(!isOpen);
 
-  const navItems = ["beranda", "produk", "testimoni", "maps"];
+  const navItems = ["beranda", "galeri", "produk", "testimoni", "maps"];
 
   // Scroll to section if hash exists on load
   useEffect(() => {
@@ -44,7 +45,7 @@ const Navbar = () => {
 
       {/* Mobile Hamburger */}
       <div className="md:hidden text-2xl cursor-pointer z-50 text-[#92400e] hover:text-yellow-600 transition duration-300" onClick={toggleNavbar}>
-        {isOpen ? <FaTimes /> : <FaBars />}
+        {isOpen ? <FaTimes /> : <HiMenuAlt1 />}
       </div>
 
       {/* Mobile Menu */}

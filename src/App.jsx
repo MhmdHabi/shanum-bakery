@@ -7,6 +7,7 @@ import Testimonials from "./components/Testimonials";
 import Products from "./components/Products";
 import { FaArrowUp } from "react-icons/fa";
 import MapPage from "./components/Map";
+import Gallery from "./components/Gallery";
 
 function App() {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -35,6 +36,7 @@ function App() {
       </div>
 
       {/* Other Sections */}
+      <Gallery />
       <Products />
       <Testimonials />
       <MapPage />

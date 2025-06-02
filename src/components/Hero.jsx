@@ -11,7 +11,7 @@ const Hero = () => (
         to="produk"
         smooth={true}
         duration={500}
-        className="inline-flex items-center gap-2 px-6 py-2 border border-[#5C3317] text-[#5C3317] text-sm font-semibold rounded-full hover:bg-[#5C3317] hover:text-white hover:border-[#5C3317] transition duration-300 ease-in-out"
+        className="inline-flex items-center gap-2 px-6 py-2 border border-[#5C3317] text-[#5C3317] text-md font-semibold rounded-full hover:bg-[#5C3317] hover:text-white hover:border-[#5C3317] transition duration-300 ease-in-out"
       >
         Lihat Produk
         <FaArrowRightLong className="mt-1" />
