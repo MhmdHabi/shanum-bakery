@@ -62,7 +62,7 @@ const Products = () => {
             <img src={item.image} alt={item.name} className="w-full h-48 object-cover mb-6 rounded-md" />
             <div className="flex justify-between items-center w-full px-2">
               <a
-                href={`https://wa.me/6281234567890?text=Halo, saya ingin membeli ${item.name}. apakah sudah ada stok?`}
+                href={`https://wa.me/6281382367040?text=Halo, saya ingin membeli ${item.name}. apakah sudah ada stok?`}
                 target="_blank"
                 className="bg-white border border-[#5C3317] text-[#5C3317] font-semibold text-sm px-4 py-1 rounded flex items-center gap-2 hover:bg-[#5C3317] hover:text-white transition"
                 aria-label={`Buy ${item.name}`}
