@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active-link {
+  background-color: #92400e; /* atau sesuai tema kamu */
+  border-radius: 9999px; /* rounded-full */
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  transition: all 0.3s ease;
+}
