@@ -31,66 +31,17 @@ const Testimonials = () => {
   const visibleReviews = reviews.slice(startIndex, startIndex + visibleCount);
 
   return (
-    <section id="testimoni" className="relative bg-white text-center pt-20 pb-16">
-      {/* Wave SVG kecil-kecil 10 gelombang */}
+    <section id="testimoni" className="relative bg-white text-center pt-20 pb-0">
+      {/* Wave Atas */}
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0] pointer-events-none" style={{ height: "60px", borderBottom: "2px solid #5C3317" }}>
         <svg className="relative block w-full h-[60px]" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1200 60" fill="#5C3317">
-          {/* 10 gelombang kecil: tiap gelombang 120px panjang */}
-          <path
-            d="
-            M0 30
-            Q15 0 30 30
-            T60 30
-            T90 30
-            T120 30
-            T150 30
-            T180 30
-            T210 30
-            T240 30
-            T270 30
-            T300 30
-            T330 30
-            T360 30
-            T390 30
-            T420 30
-            T450 30
-            T480 30
-            T510 30
-            T540 30
-            T570 30
-            T600 30
-            T630 30
-            T660 30
-            T690 30
-            T720 30
-            T750 30
-            T780 30
-            T810 30
-            T840 30
-            T870 30
-            T900 30
-            T930 30
-            T960 30
-            T990 30
-            T1020 30
-            T1050 30
-            T1080 30
-            T1110 30
-            T1140 30
-            T1170 30
-            T1200 30
-            V60
-            H0
-            V30
-            Z
-          "
-          />
+          <path d="M0 30 Q15 0 30 30 T60 30 T90 30 T120 30 T150 30 T180 30 T210 30 T240 30 T270 30 T300 30 T330 30 T360 30 T390 30 T420 30 T450 30 T480 30 T510 30 T540 30 T570 30 T600 30 T630 30 T660 30 T690 30 T720 30 T750 30 T780 30 T810 30 T840 30 T870 30 T900 30 T930 30 T960 30 T990 30 T1020 30 T1050 30 T1080 30 T1110 30 T1140 30 T1170 30 T1200 30 V60 H0 V30 Z" />
         </svg>
       </div>
 
       <h3 className="text-4xl font-extrabold mb-12 text-[#5C3317] max-w-3xl mx-auto px-4">Testimoni Pelanggan Setia yang Telah Menikmati Lezatnya Kue Shanum Bakery</h3>
 
-      <div className="flex justify-center items-center gap-6 max-w-5xl mx-auto px-4">
+      <div className="flex justify-center items-center gap-6 max-w-5xl mx-auto px-4 mb-20">
         <button onClick={prevSlide} aria-label="Previous testimonials" className="text-4xl text-[#5C3317] hover:text-yellow-600 transition">
           &#8592;
         </button>
@@ -108,6 +59,13 @@ const Testimonials = () => {
         <button onClick={nextSlide} aria-label="Next testimonials" className="text-4xl text-[#5C3317] hover:text-yellow-600 transition">
           &#8594;
         </button>
+      </div>
+
+      {/* Wave Bawah */}
+      <div className="relative w-full overflow-hidden leading-[0]" style={{ height: "60px", marginTop: "-1px" }}>
+        <svg className="block w-full h-[60px]" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1200 60" fill="#5C3317">
+          <path d="M0 30 Q15 60 30 30 T60 30 T90 30 T120 30 T150 30 T180 30 T210 30 T240 30 T270 30 T300 30 T330 30 T360 30 T390 30 T420 30 T450 30 T480 30 T510 30 T540 30 T570 30 T600 30 T630 30 T660 30 T690 30 T720 30 T750 30 T780 30 T810 30 T840 30 T870 30 T900 30 T930 30 T960 30 T990 30 T1020 30 T1050 30 T1080 30 T1110 30 T1140 30 T1170 30 T1200 30 V0 H0 V30 Z" />
+        </svg>
       </div>
     </section>
   );

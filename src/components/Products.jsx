@@ -61,10 +61,15 @@ const Products = () => {
             <p className="text-sm text-yellow-600 font-semibold mb-4">{item.category}</p>
             <img src={item.image} alt={item.name} className="w-full h-48 object-cover mb-6 rounded-md" />
             <div className="flex justify-between items-center w-full px-2">
-              <button className="bg-white border border-[#5C3317] text-[#5C3317] font-semibold text-sm px-4 py-1 rounded flex items-center gap-2 hover:bg-[#5C3317] hover:text-white transition" aria-label={`Buy ${item.name}`}>
+              <a
+                href={`https://wa.me/6281234567890?text=Halo, saya ingin membeli ${item.name}. apakah sudah ada stok?`}
+                target="_blank"
+                className="bg-white border border-[#5C3317] text-[#5C3317] font-semibold text-sm px-4 py-1 rounded flex items-center gap-2 hover:bg-[#5C3317] hover:text-white transition"
+                aria-label={`Buy ${item.name}`}
+              >
                 <FaWhatsapp />
                 Buy to Wa
-              </button>
+              </a>
               <p className="text-gray-800 font-bold text-md">{item.price}</p>
             </div>
           </div>

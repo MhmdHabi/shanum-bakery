@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleNavbar = () => setIsOpen(!isOpen);
 
-  const navItems = ["beranda", "produk", "testimoni", "kontak"];
+  const navItems = ["beranda", "produk", "testimoni", "maps"];
 
   // Scroll to section if hash exists on load
   useEffect(() => {

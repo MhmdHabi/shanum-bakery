@@ -2,7 +2,7 @@ import React from "react";
 import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaInstagram, FaFacebookF, FaWhatsapp, FaTiktok, FaYoutube } from "react-icons/fa";
 
 const Footer = () => (
-  <footer id="kontak" className="bg-[#5C3317] text-white py-12 px-6">
+  <footer id="kontak" className="bg-[#5C3317] text-white py-12 px-10">
     <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
       {/* Info Toko */}
       <div>
@@ -38,8 +38,8 @@ const Footer = () => (
             </a>
           </li>
           <li>
-            <a href="#kontak" className="hover:underline">
-              Kontak
+            <a href="#maps" className="hover:underline">
+              Maps
             </a>
           </li>
         </ul>

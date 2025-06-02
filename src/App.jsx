@@ -6,6 +6,7 @@ import heroBg from "./assets/hero1.jpg";
 import Testimonials from "./components/Testimonials";
 import Products from "./components/Products";
 import { FaArrowUp } from "react-icons/fa";
+import MapPage from "./components/Map";
 
 function App() {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -36,6 +37,7 @@ function App() {
       {/* Other Sections */}
       <Products />
       <Testimonials />
+      <MapPage />
       <Footer />
 
       {/* Scroll to Top Button */}
