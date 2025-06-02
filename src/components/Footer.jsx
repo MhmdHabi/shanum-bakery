@@ -1,5 +1,6 @@
 import React from "react";
 import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaInstagram, FaFacebookF, FaWhatsapp, FaTiktok, FaYoutube } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Footer = () => (
   <footer id="kontak" className="bg-[#5C3317] text-white py-12 px-10">
@@ -11,10 +12,10 @@ const Footer = () => (
           <FaMapMarkerAlt /> Jl. Manis No. 123, Kota Lezat
         </p>
         <p className="text-sm mb-2 flex items-center gap-2">
-          <FaEnvelope /> info@tokokueshanum.com
+          <FaEnvelope /> info@shanumbakery.com
         </p>
         <p className="text-sm flex items-center gap-2">
-          <FaPhoneAlt /> 0812-3456-7890
+          <FaPhoneAlt /> 081391713828
         </p>
       </div>
 
@@ -22,26 +23,19 @@ const Footer = () => (
       <div>
         <h4 className="text-2xl font-bold mb-4">Navigasi</h4>
         <ul className="text-sm space-y-2">
-          <li>
-            <a href="#beranda" className="hover:underline">
-              Beranda
-            </a>
-          </li>
-          <li>
-            <a href="#produk" className="hover:underline">
-              Produk
-            </a>
-          </li>
-          <li>
-            <a href="#testimoni" className="hover:underline">
-              Testimoni
-            </a>
-          </li>
-          <li>
-            <a href="#maps" className="hover:underline">
-              Maps
-            </a>
-          </li>
+          {[
+            { to: "beranda", label: "Beranda" },
+            { to: "galeri", label: "Galeri" },
+            { to: "produk", label: "Produk" },
+            { to: "testimoni", label: "Testimoni" },
+            { to: "maps", label: "Maps" },
+          ].map(({ to, label }) => (
+            <li key={to}>
+              <Link to={to} smooth={true} duration={500} className="hover:underline cursor-pointer">
+                {label}
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
 
@@ -49,20 +43,11 @@ const Footer = () => (
       <div>
         <h4 className="text-2xl font-bold mb-4">Ikuti Kami</h4>
         <div className="flex flex-wrap gap-4 text-lg">
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-300">
+          <a href="https://www.instagram.com/shanum_bakerys" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-300">
             <FaInstagram />
           </a>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-300">
-            <FaFacebookF />
-          </a>
-          <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-300">
+          <a href="https://wa.me/6281391713828" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-300">
             <FaWhatsapp />
-          </a>
-          <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-300">
-            <FaTiktok />
-          </a>
-          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-300">
-            <FaYoutube />
           </a>
         </div>
 

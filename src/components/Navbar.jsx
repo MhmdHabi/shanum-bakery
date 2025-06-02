@@ -28,7 +28,7 @@ const Navbar = () => {
       <img src={logo} alt="Logo Toko Kue" className="h-14 w-auto" />
 
       {/* Desktop Menu */}
-      <ul className="hidden md:flex space-x-4 font-semibold absolute left-1/2 transform -translate-x-1/2 bg-orange-300 bg-opacity-50 px-[3px] py-2 rounded-full shadow-md border border-gray-200">
+      <ul className="hidden md:flex space-x-4 font-semibold absolute left-1/2 transform -translate-x-1/2 bg-orange-300 bg-opacity-50 px-[3px] py-2 rounded-full shadow-md border border-[#92400e]">
         {navItems.map((item) => (
           <li key={item}>
             <Link to={item} smooth={true} duration={500} spy={true} hashSpy={true} activeClass="active-link" className="cursor-pointer text-[#92400e] capitalize px-4 py-2 transition-all duration-200">
@@ -39,7 +39,7 @@ const Navbar = () => {
       </ul>
 
       {/* WhatsApp Icon */}
-      <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" className="text-3xl text-[#92400e] hover:text-green-500 hidden md:block">
+      <a href="https://wa.link/dop9gn" target="_blank" rel="noopener noreferrer" className="text-3xl text-[#92400e] hover:text-green-500 hidden md:block">
         <FaWhatsapp />
       </a>
 
@@ -69,7 +69,7 @@ const Navbar = () => {
           ))}
           <li>
             <a
-              href="https://wa.link/dlqo92"
+              href="https://wa.link/dop9gn"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-lg px-6 py-3 text-green-700 bg-white/60 rounded-full hover:bg-green-500 hover:text-white transition duration-200"
