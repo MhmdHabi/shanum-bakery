@@ -25,7 +25,9 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full z-50 flex items-center justify-between px-6 py-2 bg-transparent text-gray-900">
       {/* Logo */}
-      <img src={logo} alt="Logo Toko Kue" className="h-14 w-auto" />
+      <Link to="beranda" smooth={true} duration={500} spy={true} hashSpy={true} className="cursor-pointer">
+        <img src={logo} alt="Logo Toko Kue" className="h-14 w-auto" />
+      </Link>
 
       {/* Desktop Menu */}
       <ul className="hidden md:flex space-x-4 font-semibold absolute left-1/2 transform -translate-x-1/2 bg-orange-300 bg-opacity-50 px-[3px] py-2 rounded-full shadow-md border border-[#92400e]">
